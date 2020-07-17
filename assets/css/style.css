@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/* ************************NAVBAR************************** */
+li {
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    padding-left: 40px;    
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    background-color:rgb(0, 0, 0);
+    padding: 15px 0 15px 0;
+    margin: 0;
+    /* overflow: hidden; */
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+nav a {
+    text-decoration: none;
+    color:white;
+    position: relative;
+}
+nav a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: 0.4s;
+}
+nav a::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-bottom: 2px solid white;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+}
+nav li {
+    overflow: hidden;
+}
+nav a.active::after {
+    transform: translateX(0%);
+}
+
+
+/* ************************INTRO************************** */
+h1 {
+    display: inline;
+}
+h1 span:first-of-type {
+    color: rgb(254, 205, 143);
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+h1 span:nth-of-type(2) {
+    color: white;
+    font-size: 50px;
+    font-family: 'Playfair Display', serif;
+}
+h1 span:nth-of-type(3) {
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+#intro {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(51, 55, 70);
+    margin-left: 0;
+    padding: 60px 60px;
+}
+#intro img {
+    width: 350px;
+    border-radius: 50%;
+}
+
+/* *********************************ABOUT********************************* */
+#about {
+    background-color: rgb(37, 39, 52);
+    padding: 30px 60px;
+}
+#about h2 {
+    margin-top: 0;
+}
+#about p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 30px;
+}
+/* *********************************WORK********************************* */
+#work {
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+.projects {
+    padding: 30px;
+    background-color: rgb(51, 55, 70);
+    display: grid;
+    justify-items: center;
+    row-gap: 40px;
+    column-gap: 20px;
+    grid-template-areas: 
+    "work work work"
+    "card-1 card-2 card-3"
+    "card-4 card-5 card-6";
+}
+#work {
+    grid-area: work;
+    font-size: 30px;
+}
+.card-1 {grid-area: card-1;}
+.card-2 {grid-area: card-2;}
+.card-3 {grid-area: card-3;}
+.card-4 {grid-area: card-4;}
+.card-5 {grid-area: card-5;}
+.card-6 {grid-area: card-6;}
+
+.project-card {
+    border: 1px rgb(254, 205, 143) solid ;
+    border-radius: 20px;
+    width: 300px;
+    background-color: rgb(37, 39, 52);
+}
+.project-card img {
+    width: 300px;
+    border-radius: 20px 20px 0 0;
+}
+.project-card h2 {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    padding-left: 20px;
+}
+.project-card p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+}
+
+/* *********************************QUOTE************ */
+#quote {
+    background-color: rgb(37, 39, 52);
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#quote div {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    
+}
+
+/* *********************************FOOTER / CONTACT / SOCIAL************ */
+footer {
+    background-color: rgb(51, 55, 70);
+    padding: 80px;
+}
+#footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+footer h2 {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+    border: 1px rgb(254, 205, 143) solid ;
+    border-radius: 5px;
+    background-color: rgb(37, 39, 52);
+    width: 200px;
+    height: 50px;
+}
+.social:hover {
+    background-color: rgb(254, 205, 143);
+    transition-duration: 0.4s;
+}
+.social p {
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+a .social {
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+i {
+    font-size: 30px;
+    color: white;
+}
