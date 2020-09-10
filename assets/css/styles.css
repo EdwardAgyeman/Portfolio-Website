@@ -1,212 +1,3 @@
-/* 
-body {
-    margin: 0;
-}
-html {
-    scroll-behavior: smooth;
-}
-
-li {
-    font-family: 'Montserrat', sans-serif;
-    list-style: none;
-    padding-left: 40px;    
-}
-ul {
-    display: flex;
-    justify-content: space-around;
-    background-color:rgb(0, 0, 0);
-    padding: 15px 0 15px 0;
-    margin: 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
-nav a {
-    text-decoration: none;
-    color:white;
-    position: relative;
-}
-nav a:hover {
-    text-decoration: none;
-    font-weight: bold;
-    transition-duration: 0.4s;
-}
-nav a::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    border-bottom: 2px solid white;
-    top: 0;
-    left: 0;
-    transform: translateX(-100%);
-    transition: transform 0.4s ease;
-}
-nav li {
-    overflow: hidden;
-}
-nav a.active::after {
-    transform: translateX(0%);
-}
-
-
-h1 {
-    display: inline;
-}
-h1 span:first-of-type {
-    color: rgb(254, 205, 143);
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-}
-h1 span:nth-of-type(2) {
-    color: white;
-    font-size: 50px;
-    font-family: 'Playfair Display', serif;
-}
-h1 span:nth-of-type(3) {
-    color: white;
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-}
-#intro {
-    display: flex;
-    justify-content: space-around;
-    background-color: rgb(51, 55, 70);
-    margin-left: 0;
-    padding: 60px 60px;
-}
-#intro img {
-    width: 350px;
-    border-radius: 50%;
-}
-
-#about {
-    background-color: rgb(37, 39, 52);
-    padding: 30px 60px;
-}
-#about h2 {
-    margin-top: 0;
-}
-#about p {
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    margin: 0;
-    padding: 30px;
-}
-#work {
-    color: white;
-    font-family: 'Playfair Display', serif;
-}
-.projects {
-    padding: 30px;
-    background-color: rgb(51, 55, 70);
-    display: grid;
-    justify-items: center;
-    row-gap: 40px;
-    column-gap: 20px;
-    grid-template-areas: 
-    "work work work"
-    "card-1 card-2 card-3"
-    "card-4 card-5 card-6";
-}
-#work {
-    grid-area: work;
-    font-size: 30px;
-}
-.card-1 {grid-area: card-1;}
-.card-2 {grid-area: card-2;}
-.card-3 {grid-area: card-3;}
-.card-4 {grid-area: card-4;}
-.card-5 {grid-area: card-5;}
-.card-6 {grid-area: card-6;}
-
-.project-card {
-    border: 1px rgb(254, 205, 143) solid ;
-    border-radius: 20px;
-    width: 300px;
-    background-color: rgb(37, 39, 52);
-}
-.project-card p {
-    display: none;
-}
-.project-card img {
-    width: 300px;
-    border-radius: 20px 20px 0 0;
-}
-.project-card h2 {
-    color: white;
-    font-family: 'Playfair Display', serif;
-    padding-left: 20px;
-}
-.project-card p {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    padding: 20px;
-}
-
-#quote {
-    background-color: rgb(37, 39, 52);
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#quote div {
-    color: white;
-    font-family: 'Playfair Display', serif;
-    font-size: 40px;
-    
-}
-
-footer {
-    background-color: rgb(51, 55, 70);
-    padding: 80px;
-}
-#footer-container {
-    display: flex;
-    justify-content: space-around;
-}
-footer h2 {
-    font-family: 'Playfair Display', serif;
-    color: white;
-    margin-bottom: 50px;
-    text-align: center;
-}
-.social {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 10px 20px;
-    border: 1px rgb(254, 205, 143) solid ;
-    border-radius: 5px;
-    background-color: rgb(37, 39, 52);
-    width: 250px;
-    height: 50px;
-}
-.social:hover {
-    background-color: rgb(254, 205, 143);
-    transition-duration: 0.4s;
-}
-.social p {
-    color: white;
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-}
-a .social {
-    color: white;
-    font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
-}
-a {
-    text-decoration: none;
-}
-i {
-    font-size: 30px;
-    color: white;
-} */
-
-/* ************************************************VERSION 2.0********************************************************* */
-
 /* =====Google Fonts===== */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
@@ -462,4 +253,57 @@ img {
 .about__img img {
     width: 200px;
     border-radius: .5rem;
+}
+
+/* =====SKILLS===== */
+.skills__container {
+    row-gap: 2rem;
+    text-align: center;
+}
+.skills_subtitle {
+    margin-bottom: var(--mb-2);
+}
+.skills__text {
+    margin-bottom: var(--mb-4);
+}
+.skills__data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-weight: var(--font-semi);
+    padding: .5rem 1rem;
+    margin-bottom: var(--mb-4);
+    border-radius: .5rem;
+    box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
+}
+.skills__icon {
+    font-size: 2rem;
+    margin-right: var(--mb-2);
+    color: var(--first-color);
+}
+.skills__names {
+    display: flex;
+    align-items: center;
+}
+.skills__bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: var(--first-color);
+    height: .25rem;
+    border-radius: .5rem;
+    z-index: var(--z-back);
+}
+.skills__html {
+    width: 90%;
+}
+.skills__css {
+    width: 80%;
+}
+.skills__js {
+    width: 70%;
+}
+.skills__react {
+    width: 30%;
 }
