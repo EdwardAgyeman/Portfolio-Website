@@ -265,6 +265,7 @@ img {
 }
 .skills__text {
     margin-bottom: var(--mb-4);
+    display: none;
 }
 .skills__data {
     display: flex;
