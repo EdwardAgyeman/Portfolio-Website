@@ -302,11 +302,17 @@ img {
 .skills__css {
     width: 80%;
 }
+.skills__bootstrap {
+    width: 80%;
+}
 .skills__js {
     width: 70%;
 }
 .skills__react {
-    width: 30%;
+    width: 70%;
+}
+.skills__git {
+    width: 70%;
 }
 .skills__img {
     border-radius: .5rem;
