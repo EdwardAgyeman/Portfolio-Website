@@ -297,22 +297,22 @@ img {
     z-index: var(--z-back);
 }
 .skills__html {
-    width: 100%;
+    width: 0%;
 }
 .skills__css {
-    width: 100%;
+    width: 0%;
 }
 .skills__bootstrap {
-    width: 100%;
+    width: 0%;
 }
 .skills__js {
-    width: 100%;
+    width: 0%;
 }
 .skills__react {
-    width: 100%;
+    width: 0%;
 }
 .skills__git {
-    width: 100%;
+    width: 0%;
 }
 .skills__img {
     border-radius: .5rem;
